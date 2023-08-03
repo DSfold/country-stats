@@ -1,3 +1,4 @@
+import { PupolationResponseTransformed } from "@src/features/api/interfaces";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -9,8 +10,6 @@ import {
   Legend,
   Colors,
 } from "chart.js";
-
-import { PupolationResponseTransformed } from "../../features/api/interfaces";
 
 export interface useLineChartOptionsProps {
   title: string;

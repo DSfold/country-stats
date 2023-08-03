@@ -12,7 +12,10 @@ function App() {
     <>
       <div className={`${darkMode ? "dark" : ""} relative`}>
         <div className="w-full h-screen dark:bg-gray-700 overflow-auto">
-          <div className="py-10 grid place-items-center bg-gradient-to-b from-cyan-500 to-white dark:to-gray-700">
+          <div
+            role="earth"
+            className="py-10 grid place-items-center bg-gradient-to-b from-cyan-500 to-white dark:to-gray-700"
+          >
             <div className="p-10 bg-yellow-100 rounded-full opacity-80">
               <img className="h-[300px]" src="src/assets/earthTitlepic.png" />
             </div>

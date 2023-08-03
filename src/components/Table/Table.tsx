@@ -1,12 +1,12 @@
-import { useGetCountriesFlagsQuery } from "../../features/api/apiSlice";
-import { CountriesFlag } from "../../features/api/interfaces";
-import { usePagination } from "../../hooks/usePagination";
-import { Pagination } from "../Pagination/Pagination";
-import { Spinner } from "../Spinner/Sppiner";
+import { CountriesFlag } from "@src/features/api/interfaces";
 import { TableHeader } from "./TableHeader";
 import { TableRow } from "./TableRow";
 import { createContext, useMemo, useState } from "react";
-import { useDebounce } from "../../hooks/useDebounce";
+import { useGetCountriesFlagsQuery } from "@src/features/api/apiSlice";
+import { usePagination } from "@src/hooks/usePagination";
+import { useDebounce } from "@src/hooks/useDebounce";
+import { Spinner } from "../Spinner/Sppiner";
+import { Pagination } from "../Pagination/Pagination";
 
 export const countryContext = createContext<CountriesFlag[] | undefined>(
   undefined

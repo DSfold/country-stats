@@ -1,16 +1,17 @@
-import {
-  useGetCitiesAndPopulationQuery,
-  useGetCountryCapitalQuery,
-  useGetCountryCurrencyQuery,
-} from "../../features/api/apiSlice";
 import { Spinner } from "../Spinner/Sppiner";
 import { LineChart } from "../LineChart/LineChart";
 import { DoughnutChart } from "../DoughnutChart/DoughnutChart";
-import { useGetLineChartData } from "../../hooks/useGetLineChartData";
+
 import { useContext, useMemo } from "react";
 import { Dropdown } from "../Dropdown/Dropdown";
 import { countryContext } from "./Table";
 import { DeleteButton } from "../DeleteButton/DeleteButton";
+import {
+  useGetCitiesAndPopulationQuery,
+  useGetCountryCapitalQuery,
+  useGetCountryCurrencyQuery,
+} from "@src/features/api/apiSlice";
+import { useGetLineChartData } from "@src/hooks/useGetLineChartData";
 
 interface TableRowProps {
   name: string;

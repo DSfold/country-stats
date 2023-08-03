@@ -1,4 +1,4 @@
-import { DeleteIcon } from "../../icons/DeleteIcon";
+import { DeleteIcon } from "@src/icons/DeleteIcon";
 
 export interface TableHeaderProps {
   searchValue?: string;
