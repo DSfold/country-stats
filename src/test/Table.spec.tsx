@@ -1,6 +1,6 @@
-import { describe, test, expect } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { describe, expect, test } from "vitest";
 import { Table } from "../components/Table/Table";
+import { render } from "./general";
 
 describe("testing Table render", () => {
   test("testing table row render", () => {
