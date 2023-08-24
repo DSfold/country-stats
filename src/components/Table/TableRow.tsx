@@ -13,6 +13,7 @@ export const TableRow = (props: TableRowProps) => {
   return (
     <>
       <tr
+        role="tableRow"
         onClick={() => setIsOpen(!isOpen)}
         className={`bg-slate-200 h-14 mt-2 cursor-pointer
         dark:bg-slate-500

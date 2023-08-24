@@ -6,8 +6,9 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "baseUrl": ".",
+    "types": ["vite/client", "vitest/globals"],
     "paths": {
-      "src/*": ["./src/*"]
+      "@src/*": ["./src/*"]
     },
 
     /* Bundler mode */
@@ -24,6 +25,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["./src", "./vitest/setupTests.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

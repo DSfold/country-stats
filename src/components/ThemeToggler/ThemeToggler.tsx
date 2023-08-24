@@ -1,5 +1,5 @@
-import { MoonIcon } from "../../icons/MoonIcon";
-import { SunIcon } from "../../icons/SunIcon";
+import { MoonIcon } from "@src/icons/MoonIcon";
+import { SunIcon } from "@src/icons/SunIcon";
 
 export interface ThemeTogglerProps {
   darkMode: boolean;

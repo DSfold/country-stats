@@ -1,8 +1,8 @@
 import { Line } from "react-chartjs-2";
 import { useLineChartOptions } from "./useLineChartOptions";
-import { PupolationResponseTransformed } from "../../features/api/interfaces";
 import { useContext } from "react";
-import { darkModeContext } from "../../App";
+import { darkModeContext } from "@src/App";
+import { PupolationResponseTransformed } from "@src/features/api/interfaces";
 
 export interface LineChartProps {
   data: PupolationResponseTransformed[];
